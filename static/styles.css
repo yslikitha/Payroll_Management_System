@@ -1,0 +1,112 @@
+/* styles.css */
+
+/* Reset default styles */
+body, h1, h2, p, label, input {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styles */
+body {
+    /*background-color: #f2f2f2;*/
+    background-image:url('pt4.jpg') ;
+}
+
+/* Header styles */
+h1 {
+    color: #333;
+    font-size: 45px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #555;
+}
+
+input[type="text"] {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Employee details styles */
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 88px 26px 41px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 30px;
+    margin-left: 24px;
+}
+
+/* Not found styles */
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.not-found h1 {
+    color: #FF4136;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.not-found p {
+    color: #555;
+    text-align: center;
+}
+
+/* Background effect */
+.background-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to right, #003366, #336699);
+    animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payroll Management System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Payroll Management System</h1>
+    <form action="/employee" method="POST">
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" name="employee_id" id="employee_id">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

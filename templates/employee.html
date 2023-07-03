@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <h2>Employee ID: {{ employee[0] }}</h2>
+    <p>Name: {{ employee[1] }}</p>
+    <p>Position: {{ employee[2] }}</p>
+    <p>Department: {{ employee[3] }}</p>
+    <p>Total Hours Worked: {{ total_hours_worked }}</p>
+    <p>Salary per Hour: {{ salary_per_hour }}</p>
+    <p>Total Salary Income: ${{ total_salary_income }}</p>
+
+</body>
+</html>
